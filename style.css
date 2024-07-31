@@ -1,0 +1,69 @@
+div{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.full-container{
+    display:grid;
+    grid-template-areas:
+    'Display Display Display Display'
+    '. . . .'
+    '. . . .'
+    '. . . .'
+    '. . . .'
+    'zeroArea zeroArea . .';
+    width:250px;
+    border-radius:5px;
+    padding:10px;
+    grid-gap:3px;
+    background-color:#dadee5;
+}
+
+button{
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    height: 45px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+button:hover{
+    cursor:pointer;
+    background-color: rgb(123, 169, 255);
+    transition:.25s;
+}
+
+button:active, button.active{
+    background-color:cornflowerblue;
+    transition:.25s;
+}
+
+.number{
+    background-color:#ffffff;
+    color:black;
+}
+
+.arith{
+    background-color:#df5c16;
+}
+
+.function{
+    background-color:#0056a9;
+}
+
+#zero{
+    grid-area: zeroArea;
+}
+
+.display{
+    grid-area: Display;
+    background-color:#002e69;
+    color:#ffffff;
+    height: 35px;
+    border-radius: 2px;
+    text-align:right;
+    font-size: 20px;
+    line-height: 35px;
+    padding:10px;
+}
